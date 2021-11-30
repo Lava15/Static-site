@@ -1,0 +1,16 @@
+@keyframes mobile-menu {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@mixin mobile-menu($duration) {
+  animation: mobile-menu $duration ease-in-out both;
+}
+
+.menu {
+  @include mobile-menu(2s);
+}
