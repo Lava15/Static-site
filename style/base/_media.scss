@@ -1,0 +1,47 @@
+@media (max-width: 30em) {
+  .nav {
+    position: relative;
+    transition: 1s ease-in-out;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 60vh;
+      width: 100%;
+    }
+
+    a {
+      width: 33%;
+      text-align: center;
+      transition: cubic-bezier(0.17, 0.67, 0.7, 0.91);
+    }
+
+    .logo {
+      z-index: 1;
+    }
+
+    .toggle-menu {
+      position: fixed;
+      top: 0.3rem;
+      right: 1rem;
+      z-index: 100;
+      display: inline-block;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+}
+
+#section {
+  background-color: rgb(255, 255, 255);
+}
+
+.hide {
+  display: none;
+}

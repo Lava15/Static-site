@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+
+  background: linear-gradient(
+    34deg,
+    rgba(58, 154, 218, 0.5354516806722689) 0%,
+    rgba(26, 130, 200, 1) 44%,
+    rgba(1, 111, 185, 1) 100%
+  );
+
+  // &:hover {
+  //   background: transparent;
+  // }
+  .menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: #41ead4;
+    border: 0.2rem solid #41ead4;
+    padding: 0.4rem 1.4rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #191516;
+      scale: 1.1;
+    }
+  }
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.toggle-menu {
+  display: none;
+}
