@@ -11,6 +11,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
           box-sizing: border-box;
   width: 120rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -130,9 +132,10 @@ body {
   height: 80rem;
 }
 
-@media (max-width: 30em) {
+@media screen and (max-width: 30em) {
   body {
     overflow-x: hidden;
+    width: 100%;
   }
   .nav {
     position: relative;
@@ -213,7 +216,7 @@ body {
           transform: translateY(-150%);
 }
 
-@media (max-width: 30em) {
+@media screen and (max-width: 30em) {
   #section {
     background-image: url("../../../img/2.jpeg");
     background-size: cover;

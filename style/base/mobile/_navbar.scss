@@ -1,6 +1,7 @@
-@media (max-width: 30em) {
+@media screen and(max-width: 30em) {
   body {
     overflow-x: hidden;
+    width: 100%;
   }
   .nav {
     position: relative;
