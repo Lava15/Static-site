@@ -9,15 +9,17 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
+  margin: auto;
   box-sizing: border-box;
-  max-width: 1200px;
+  width: 120rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+@import "../base/vars";
 @import "../base/navbar";
 @import "../base/section";
-@import "../base/media";
+@import "../base/mobile/navbar";
 @import "../base/animation/animation-mobile";

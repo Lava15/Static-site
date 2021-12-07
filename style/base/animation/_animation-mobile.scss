@@ -13,4 +13,5 @@
 
 .menu {
   @include mobile-menu(2s);
+  display: flex;
 }
