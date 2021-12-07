@@ -1,4 +1,7 @@
 @media (max-width: 30em) {
+  body {
+    overflow-x: hidden;
+  }
   .nav {
     position: relative;
     .desktop-menu {
@@ -14,8 +17,8 @@
       gap: 3rem;
       position: absolute;
       background-color: rgba(0, 0, 0, 0.5);
-      height: 60vh;
-      width: 40%;
+      height: 64vh;
+      width: 38%;
       z-index: 1;
     }
 

@@ -2,7 +2,8 @@
   #section {
     background-image: url("../../../img/2.jpeg");
     background-size: cover;
-    height: 80rem;
+    height: calc(100vh - 5rem);
     width: 45rem;
+    background-position: center;
   }
 }
