@@ -19,7 +19,7 @@
       position: absolute;
       background-color: rgba(0, 0, 0, 0.5);
       height: 64vh;
-      width: 38%;
+      width: 100vw;
       z-index: 1;
     }
 
@@ -29,6 +29,8 @@
       font-size: 2rem;
     }
     .close-btn {
+      position: fixed;
+
       display: flex;
       align-items: center;
       justify-content: center;

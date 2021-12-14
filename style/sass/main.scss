@@ -11,6 +11,8 @@ html {
   font-size: 62.5%;
   height: 100%;
   overflow-x: hidden;
+  background-image: url("../../img/html-bg.jpeg");
+  background-repeat: no-repeat;
 }
 
 body {
@@ -20,8 +22,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-x: hidden;
 }
+@import "../base/custom-scroll";
 @import "../base/vars";
 @import "../base/navbar";
 @import "../base/section";
 @import "../base/mobile/navbar";
 @import "../base/animation/animation-mobile";
+@import "../base/project-cards";
