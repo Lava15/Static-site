@@ -1,5 +1,36 @@
-.projects-sections {
+.projects-section {
   width: inherit;
-  background-color: #dcf58b;
-  height: 100vh;
+  background-color: #ffffff;
+  height: 60rem;
+  h2 {
+    color: #fff;
+  }
+}
+
+.slider {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  text-align: center;
+
+  .card {
+    margin-top: 10rem;
+    border: #3f3939 solid 0.3rem;
+    border-radius: 2rem;
+    height: 40rem;
+    width: 20rem;
+    background-image: linear-gradient(
+      to top,
+      #232629,
+      #232629,
+      #00163c,
+      #001854,
+      #161267
+    );
+
+    i {
+      color: rgb(236, 155, 5);
+    }
+  }
 }

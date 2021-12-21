@@ -12,15 +12,14 @@ html {
   font-size: 62.5%;
   height: 100%;
   overflow-x: hidden;
-  background-image: url("../../img/html-bg.jpeg");
-  background-repeat: no-repeat;
+  background-color: #2f2f2f;
 }
 
 body {
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 120rem;
+  width: 144rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-x: hidden;
 }
@@ -37,16 +36,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 5rem;
-  min-width: 120rem;
+  height: 8rem;
+  min-width: 144rem;
   position: fixed;
   background-color: #5c04ff;
   position: relative;
 }
 
 .nav .desktop-menu {
-  right: 1rem;
-  top: 1.7rem;
+  right: 2rem;
+  top: 3rem;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,18 +60,21 @@ body {
   list-style: none;
 }
 
+.nav .desktop-menu li:hover {
+  background-color: #191516;
+  scale: 1.4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .nav .desktop-menu a {
   text-decoration: none;
   color: #41ead4;
-  border: 0.2rem solid #41ead4;
+  border: 0.4rem solid #41ead4;
   padding: 0.4rem 2rem;
-  border-radius: 0.8rem;
+  border-radius: 1rem;
   font-weight: bold;
-}
-
-.nav .desktop-menu a:hover {
-  background-color: #191516;
-  scale: 1.1;
+  font-size: 2rem;
 }
 
 .nav .menu {
@@ -145,7 +147,7 @@ body {
     width: 100%;
   }
   .nav {
-    position: relative;
+    position: fixed;
   }
   .nav .desktop-menu {
     display: none;
@@ -264,9 +266,37 @@ body {
   display: flex;
 }
 
-.projects-sections {
+.projects-section {
   width: inherit;
-  background-color: #dcf58b;
-  height: 100vh;
+  background-color: #ffffff;
+  height: 60rem;
+}
+
+.projects-section h2 {
+  color: #fff;
+}
+
+.slider {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  text-align: center;
+}
+
+.slider .card {
+  margin-top: 10rem;
+  border: #3f3939 solid 0.3rem;
+  border-radius: 2rem;
+  height: 40rem;
+  width: 20rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#232629), color-stop(#232629), color-stop(#00163c), color-stop(#001854), to(#161267));
+  background-image: linear-gradient(to top, #232629, #232629, #00163c, #001854, #161267);
+}
+
+.slider .card i {
+  color: #ec9b05;
 }
 /*# sourceMappingURL=main.css.map */

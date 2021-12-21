@@ -4,7 +4,8 @@
     width: 100%;
   }
   .nav {
-    position: relative;
+    position: fixed;
+    // position: relative;
     .desktop-menu {
       display: none;
     }
