@@ -1,6 +1,6 @@
 .projects-section {
   width: inherit;
-  background-color: #ffffff;
+  background-color: #504e4e;
   height: 60rem;
   h2 {
     color: #fff;
@@ -10,7 +10,7 @@
 .slider {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   place-items: center;
   text-align: center;
 
@@ -19,7 +19,7 @@
     border: #3f3939 solid 0.3rem;
     border-radius: 2rem;
     height: 40rem;
-    width: 20rem;
+    width: 26rem;
     background-image: linear-gradient(
       to top,
       #232629,
