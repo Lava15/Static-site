@@ -3,9 +3,9 @@
     position: relative;
     width: 100%;
     height: 60rem;
-    cursor: grabbing;
 
     .slider {
+      cursor: pointer;
       pointer-events: none;
       position: absolute;
       top: 0;

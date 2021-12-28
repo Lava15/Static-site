@@ -23,8 +23,10 @@ body {
 }
 @import "../base/custom-scroll";
 @import "../base/vars";
-@import "../base/navbar";
-@import "../base/section";
+@import "../base/desktop/navbar";
+@import "../base/desktop/section";
 @import "../base/mobile/navbar";
 @import "../base/animation/animation-mobile";
-@import "../base/project-cards";
+@import "../base/desktop/project-cards";
+@import "../base/desktop/promo-section";
+@import "../base/tablet/navbar";
