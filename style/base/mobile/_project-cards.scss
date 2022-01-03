@@ -1,4 +1,4 @@
-@media screen and(max-width: 30em) {
+@media screen and(max-width: 35em) {
   .projects-section {
     position: relative;
     width: 100%;
@@ -12,7 +12,7 @@
       left: 0;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      background-color: #464444;
+      background-color: $light-gray;
       gap: 3rem;
     }
   }

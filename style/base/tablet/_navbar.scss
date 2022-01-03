@@ -1,17 +1,18 @@
-@media screen and(min-width: 30em) and (max-width: 60em) {
+@media screen and(min-width: 35em) and (max-width: 60em) {
+  .logo {
+    margin-top: 5rem;
+    z-index: 5;
+  }
   .nav {
-    height: 15vh;
-    background-color: #201e1e;
-    position: fixed;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    // width: inherit;
     position: relative;
+
     .desktop-menu {
-      transform: translate(-20%, 100%);
+      min-width: 75vw;
       li {
         a {
-          border-radius: 50%;
           color: #fff;
-          padding: 3rem;
           font-size: 1.5rem;
         }
       }

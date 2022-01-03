@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   height: 8rem;
-  max-width: 144rem;
+  max-width: 100%;
   position: fixed;
-  background-color: $nav-purple;
+  background-color: transparent;
   position: relative;
 
   .desktop-menu {
@@ -25,8 +25,8 @@
 
     a {
       text-decoration: none;
-      color: $light-green;
-      border: 0.4rem solid $light-green;
+      color: #fff;
+      border: 0.3rem solid $light-green;
       padding: 0.4rem 2rem;
       border-radius: 1rem;
       font-weight: bold;
