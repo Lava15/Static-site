@@ -1,7 +1,27 @@
 .promo-section {
   background-color: $light-gray;
-  height: 50rem;
-  width: inherit;
-  font-size: 3rem;
+  height: 90rem;
   color: #524e4e;
+
+  .text-animation {
+    position: relative;
+    border: solid 0.2rem #a10808;
+    display: flex;
+
+    font-size: 12vw;
+    padding: 0;
+    line-height: 0.8;
+    // overflow: hidden;
+    padding-bottom: 0.5vw;
+  }
+}
+
+.letter {
+  &:before {
+    color: rgb(241, 0, 0);
+    content: attr(data-char);
+    position: absolute;
+
+    transform: translateY(-105%);
+  }
 }

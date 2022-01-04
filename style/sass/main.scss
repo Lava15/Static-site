@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  font-family: "Princess Sofia", "Poppins", sans-serif, cursive;
   margin: auto;
   box-sizing: border-box;
   max-width: 144rem;
@@ -29,4 +30,6 @@ body {
 @import "../base/animation/animation-mobile";
 @import "../base/desktop/project-cards";
 @import "../base/desktop/promo-section";
+@import "../base/desktop/skills";
 @import "../base/tablet/navbar";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,200&display=swap");

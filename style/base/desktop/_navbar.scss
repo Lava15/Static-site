@@ -1,4 +1,6 @@
 .nav {
+  font-family: "Poppins";
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   height: 8rem;
@@ -18,7 +20,7 @@
       list-style: none;
       &:hover {
         background-color: #191516;
-        scale: 1.4;
+        scale: 1.2;
         transition: all 0.3s ease-in-out;
       }
     }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,200&display=swap");
 *,
 *::after,
 *::before {
@@ -16,6 +17,7 @@ html {
 }
 
 body {
+  font-family: "Princess Sofia", "Poppins", sans-serif, cursive;
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,6 +32,8 @@ body {
 }
 
 .nav {
+  font-family: "Poppins";
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +66,7 @@ body {
 
 .nav .desktop-menu li:hover {
   background-color: #191516;
-  scale: 1.4;
+  scale: 1.2;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -155,6 +159,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0.1;
+  font-family: "Princess Sofia";
 }
 
 .watermark .text-1 {
@@ -363,10 +368,46 @@ body {
 
 .promo-section {
   background-color: #d3d4d9;
-  height: 50rem;
-  width: inherit;
-  font-size: 3rem;
+  height: 90rem;
   color: #524e4e;
+}
+
+.promo-section .text-animation {
+  position: relative;
+  border: solid 0.2rem #a10808;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12vw;
+  padding: 0;
+  line-height: 0.8;
+  padding-bottom: 0.5vw;
+}
+
+.letter:before {
+  color: #f10000;
+  content: attr(data-char);
+  position: absolute;
+  -webkit-transform: translateY(-105%);
+          transform: translateY(-105%);
+}
+
+.skills {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  gap: 2rem;
+}
+
+.skills li:nth-child(5) {
+  background-color: #ffffff;
+  border-radius: 2rem;
 }
 
 @media screen and (min-width: 35em) and (max-width: 60em) {
