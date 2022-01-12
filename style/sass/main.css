@@ -138,10 +138,12 @@ body {
 }
 
 #section {
-  background-image: url("../../img/1.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(82, 119, 87, 0.5)), to(rgba(5, 5, 5, 0.5))), url("../../img/1.jpeg");
+  background: linear-gradient(rgba(82, 119, 87, 0.5), rgba(5, 5, 5, 0.5)), url("../../img/1.jpeg");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 80rem;
   position: relative;
 }
@@ -331,18 +333,18 @@ body {
   display: flex;
 }
 
-.projects-section {
+.swiper {
   width: inherit;
   background-color: #d3d4d9;
   height: 60rem;
   overflow: hidden;
 }
 
-.projects-section h2 {
+.swiper h2 {
   color: #fff;
 }
 
-.slider {
+.swiper-wrapper {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
@@ -352,7 +354,7 @@ body {
   text-align: center;
 }
 
-.slider .card {
+.swiper-wrapper .swiper-slide {
   margin-top: 10rem;
   border: #3f3939 solid 0.3rem;
   border-radius: 2rem;
@@ -362,7 +364,7 @@ body {
   background-image: linear-gradient(to top, #232629, #232629, #00163c, #001854, #161267);
 }
 
-.slider .card i {
+.swiper-wrapper .swiper-slide i {
   color: #ec9b05;
 }
 
@@ -390,6 +392,12 @@ body {
   position: absolute;
   -webkit-transform: translateY(-105%);
           transform: translateY(-105%);
+}
+
+.footer {
+  background-image: url(../../../img/footer-bg.jpeg);
+  height: 30vh;
+  background-position: center;
 }
 
 .skills {

@@ -1,4 +1,4 @@
-.projects-section {
+.swiper {
   width: inherit;
   background-color: $light-gray;
   height: 60rem;
@@ -8,14 +8,14 @@
   }
 }
 
-.slider {
+.swiper-wrapper {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   place-items: center;
   text-align: center;
 
-  .card {
+  .swiper-slide {
     margin-top: 10rem;
     border: #3f3939 solid 0.3rem;
     border-radius: 2rem;

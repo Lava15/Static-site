@@ -1,8 +1,10 @@
 #section {
-  background-image: url("../../img/1.jpeg");
+  background: linear-gradient(rgba(82, 119, 87, 0.5), rgba(5, 5, 5, 0.5)),
+    url("../../img/1.jpeg");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 80rem;
   position: relative;
 }

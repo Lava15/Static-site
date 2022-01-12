@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./style/sass/main.css" />
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
 
       <ul class="desktop-menu">
         <li>
-          <a href="#">About</a>
+          <a href="./about.html">About</a>
         </li>
         <li>
           <a href="">Services</a>
@@ -35,7 +35,7 @@
       </ul>
 
       <div class="hide">
-        <a href="#" class="about">About</a>
+        <a href="./about.html" class="about">About</a>
         <a href="#" class="services">Sevices</a>
         <a href="#" class="projects">Projects</a>
         <a href="#" class="contact">Contact</a>
@@ -60,32 +60,33 @@
     </section>
 
     <!-- Project-Cards -->
-    <section class="projects-section">
-      <div class="slider">
-        <div class="card">
+    <section class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
           <h2>Project 1</h2>
           <i class="fab fa-node fa-10x"></i>
         </div>
-        <div class="card">
+        <div class="swiper-slide">
           <h2>Project 2</h2>
           <i class="fab fa-laravel fa-10x"></i>
         </div>
-        <div class="card">
+        <div class="swiper-slide">
           <h2>Project 3</h2>
           <i class="fab fa-react fa-10x"></i>
         </div>
-        <div class="card">
+        <div class="swiper-slide">
           <h2>Project 4</h2>
           <i class="fas fa-database fa-10x"></i>
         </div>
-        <div class="card">
+        <div class="swiper-slide">
           <h2>Project 5</h2>
           <i class="fas fa-comment-dots fa-10x"></i>
         </div>
 
-        <div class="progress-bar">
-          <div class="progress-inner"></div>
-        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
       </div>
     </section>
 
@@ -117,6 +118,10 @@
       </ul>
     </article>
 
+
+
+      <footer class="footer"></footer>
+      <script src="./src/swiper.js"></script>
     <script src="./src/main.js"></script>
 
 
