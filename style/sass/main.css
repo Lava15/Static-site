@@ -303,6 +303,15 @@ body {
   }
 }
 
+@media screen and (max-width: 35em) {
+  .promo-section .text-animation {
+    color: #5c04ff;
+  }
+  .promo-section .letter {
+    font-size: 18vw;
+  }
+}
+
 @-webkit-keyframes mobile-menu {
   0% {
     -webkit-transform: translateY(-150%);
@@ -370,24 +379,23 @@ body {
 
 .promo-section {
   background-color: #d3d4d9;
-  height: 90rem;
-  color: #524e4e;
+  height: 50rem;
+  color: #1c1c1c;
 }
 
 .promo-section .text-animation {
   position: relative;
-  border: solid 0.2rem #a10808;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 12vw;
+  font-size: 15rem;
   padding: 0;
   line-height: 0.8;
+  overflow: hidden;
   padding-bottom: 0.5vw;
 }
 
 .letter:before {
-  color: #f10000;
   content: attr(data-char);
   position: absolute;
   -webkit-transform: translateY(-105%);
@@ -402,7 +410,7 @@ body {
 
 .skills {
   width: 100%;
-  height: 50vh;
+  height: 33vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,6 +424,10 @@ body {
 .skills li:nth-child(5) {
   background-color: #ffffff;
   border-radius: 2rem;
+}
+
+.skills img {
+  height: 20rem;
 }
 
 @media screen and (min-width: 35em) and (max-width: 60em) {

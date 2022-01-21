@@ -54,7 +54,7 @@
       i {
         cursor: pointer;
         margin-top: 1rem;
-        color: $nav-purple;
+        color: $purple;
         opacity: 1;
       }
     }
@@ -89,3 +89,4 @@
 
 @import "./section";
 @import "./project-cards.scss";
+@import "./promo-section";

@@ -22,8 +22,7 @@
   },
   "homepage": "https://github.com/Lava15/Static-site#readme",
   "dependencies": {
-    "gsap": "^3.9.1",
-    "swiper": "^7.4.1"
+    "gsap": "^3.9.1"
   },
   "devDependencies": {
     "css-loader": "^6.5.1",
