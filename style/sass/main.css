@@ -21,7 +21,7 @@ body {
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 144rem;
+  max-width: 200rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-x: hidden;
 }
@@ -138,8 +138,8 @@ body {
 }
 
 #section {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(82, 119, 87, 0.5)), to(rgba(5, 5, 5, 0.5))), url("../../img/1.jpeg");
-  background: linear-gradient(rgba(82, 119, 87, 0.5), rgba(5, 5, 5, 0.5)), url("../../img/1.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 32, 32, 0.5)), to(rgba(83, 72, 72, 0.5))), url("../../img/1.jpeg");
+  background: linear-gradient(rgba(36, 32, 32, 0.5), rgba(83, 72, 72, 0.5)), url("../../img/1.jpeg");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -403,9 +403,31 @@ body {
 }
 
 .footer {
-  background-image: url(../../../img/footer-bg.jpeg);
-  height: 30vh;
-  background-position: center;
+  height: 35vh;
+}
+
+.footer-container {
+  height: inherit;
+  background-color: #d3d4d9;
+  max-width: 1440rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-container .footer-left {
+  height: inherit;
+  width: 50%;
+}
+
+.footer-container .footer-right {
+  height: inherit;
+  width: 50%;
+  background-color: #00171f;
+}
+
+.footer-container .footer-right img {
+  background-color: #fff;
 }
 
 .skills {

@@ -1,5 +1,24 @@
 .footer {
-  background-image: url(../../../img/footer-bg.jpeg);
-  height: 30vh;
-  background-position: center;
+  height: 35vh;
+}
+
+.footer-container {
+  height: inherit;
+  background-color: $light-gray;
+  max-width: 1440rem;
+  display: flex;
+
+  .footer-left {
+    height: inherit;
+    width: 50%;
+  }
+
+  .footer-right {
+    height: inherit;
+    width: 50%;
+    background-color: #00171f;
+    img {
+      background-color: #fff;
+    }
+  }
 }
