@@ -19,22 +19,14 @@ var swiper = new Swiper(".mySwiper", {
   // },
 });
 var swiper2 = new Swiper(".mySwiper2", {
-  effect: "cards",
-  spaceBetween: 10,
-  slidesPerView: 3,
+  effect: "coverflow",
   loop: true,
   centeredSlides: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // coverflowEffect: {
-  //   rotate: 50,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows: true,
-  // },
+  slidesPerGroup: 1,
+  slidesPerView: 3,
+  speed: 800,
+  parallax: true,
+  watchSlidesProgress: true,
 
   autoplay: {
     delay: 500,

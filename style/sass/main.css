@@ -355,7 +355,7 @@ body {
 
 .swiper {
   background-color: #d3d4d9;
-  height: 92rem;
+  height: 80rem;
 }
 
 .swiper h2 {
@@ -431,7 +431,7 @@ body {
   background-color: #fff;
 }
 
-.skills {
+#skills {
   width: 100%;
   height: 33vh;
   display: -webkit-box;
@@ -440,17 +440,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: scroll;
+  overflow: hidden;
+  background-color: transparent;
   gap: 2rem;
 }
 
-.skills li:nth-child(5) {
-  background-color: #ffffff;
-  border-radius: 2rem;
+#skills img {
+  height: 20rem;
 }
 
-.skills img {
-  height: 20rem;
+#skills-icon {
+  background-color: #fff;
+}
+
+#skills-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+  width: 80vw;
 }
 
 @media screen and (min-width: 35em) and (max-width: 60em) {
