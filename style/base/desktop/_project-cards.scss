@@ -1,37 +1,39 @@
 .swiper {
-  width: inherit;
   background-color: $light-gray;
-  height: 60rem;
-  overflow: hidden;
+  height: 92rem;
+  // overflow: hidden;
   h2 {
     color: #fff;
   }
-}
+  .swiper-wrapper {
+    // display: grid;
+    // gap: 2rem;
+    // grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    // place-items: center;
+    text-align: center;
 
-.swiper-wrapper {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  place-items: center;
-  text-align: center;
+    .swiper-slide {
+      margin-top: 6rem;
+      border-radius: 0 0 2rem 2rem;
+      background-image: linear-gradient(
+        to top,
+        #232629,
+        #232629,
+        #00163c,
+        #001854,
+        #161267
+      );
 
-  .swiper-slide {
-    margin-top: 10rem;
-    border: #3f3939 solid 0.3rem;
-    border-radius: 2rem;
-    height: 40rem;
-    width: 26rem;
-    background-image: linear-gradient(
-      to top,
-      #232629,
-      #232629,
-      #00163c,
-      #001854,
-      #161267
-    );
-
-    i {
-      color: rgb(236, 155, 5);
+      i {
+        color: #ec9b05;
+      }
     }
   }
+
+  // .swiper-button-next {
+  //   color: #fff;
+  // }
+  // .swiper-button-prev {
+  //   color: #fff;
+  // }
 }

@@ -8,22 +8,30 @@
   height: 80rem;
   position: relative;
 }
-.watermark {
-  color: $light-green;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  pointer-events: none;
-  flex-direction: column;
-  opacity: 0.1;
-  font-family: "Princess Sofia";
 
-  .text-1 {
-    letter-spacing: 2rem;
-    font-size: 16vw;
-  }
-  .text-2 {
-    font-size: 10vw;
-    letter-spacing: 0;
+.hero-section {
+  max-width: 144rem;
+  align-items: center;
+  .watermark {
+    color: $light-green;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+    flex-direction: column;
+    opacity: 0.1;
+    font-family: "Princess Sofia";
+    border: 0.8rem solid #fff;
+
+    .text-1 {
+      transform: translateX(-100%);
+      letter-spacing: 2rem;
+      font-size: 16vw;
+    }
+    .text-2 {
+      font-size: 10vw;
+      letter-spacing: 0;
+      color: $light-green;
+    }
   }
 }
