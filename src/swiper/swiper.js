@@ -7,8 +7,8 @@ var swiper = new Swiper(".mySwiper", {
   cubeEffect: {
     shadow: true,
     slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.97,
+    shadowOffset: 30,
+    shadowScale: 1,
   },
   // pagination: {
   //   el: ".swiper-pagination",

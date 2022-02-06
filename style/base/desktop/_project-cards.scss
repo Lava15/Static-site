@@ -1,19 +1,15 @@
 .swiper {
   background-color: $light-gray;
-  height: 80rem;
+  height: 60rem;
   // overflow: hidden;
   h2 {
     color: #fff;
   }
   .swiper-wrapper {
-    // display: grid;
-    // gap: 2rem;
-    // grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    // place-items: center;
     text-align: center;
 
     .swiper-slide {
-      margin-top: 6rem;
+      margin-top: 1rem;
       border-radius: 0 0 2rem 2rem;
       background-image: linear-gradient(
         to top,
@@ -29,11 +25,4 @@
       }
     }
   }
-
-  // .swiper-button-next {
-  //   color: #fff;
-  // }
-  // .swiper-button-prev {
-  //   color: #fff;
-  // }
 }
