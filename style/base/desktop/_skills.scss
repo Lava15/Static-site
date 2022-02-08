@@ -1,20 +1,30 @@
 #skills {
   width: 100%;
-  height: 33vh;
+  height: 36vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   background-color: transparent;
-  gap: 2rem;
+  gap: 13rem;
   li {
-  }
+    height: 90%;
 
-  img {
-    height: 20rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 5rem;
+    img {
+      height: 20rem;
+    }
   }
 }
 #skills-icon {
   background-color: #fff;
+}
+#skills-icon-next {
+  background-color: #fff;
+  justify-content: center;
 }
 #skills-wrapper {
   align-items: center;

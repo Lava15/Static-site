@@ -10,6 +10,7 @@ var swiper = new Swiper(".mySwiper", {
     shadowOffset: 30,
     shadowScale: 1,
   },
+
   // pagination: {
   //   el: ".swiper-pagination",
   // },
@@ -31,5 +32,21 @@ var swiper2 = new Swiper(".mySwiper2", {
   autoplay: {
     delay: 500,
     disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    150: {
+      slidesPerView: 1,
+    },
+
+    640: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+    1400: {
+      slidesPerView: 3,
+    },
   },
 });
