@@ -6,4 +6,35 @@
     width: 100vw;
     background-position: center;
   }
+
+  .hero-section {
+    align-items: center;
+    .watermark {
+      width: 100%;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      pointer-events: none;
+      flex-direction: column;
+      overflow: hidden;
+      font-weight: bold;
+
+      .text-1 {
+        letter-spacing: 2rem;
+        font-size: 14vw;
+        -webkit-text-stroke: 0.3rem $light-gray;
+      }
+      .text-2 {
+        font-size: 8vw;
+        letter-spacing: 0;
+        -webkit-text-stroke: 0.3rem $light-gray;
+      }
+
+      h1 {
+        font-size: 5rem;
+        color: #fff;
+        margin: 0 2rem 1rem;
+      }
+    }
+  }
 }

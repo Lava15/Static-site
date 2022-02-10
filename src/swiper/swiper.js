@@ -36,6 +36,9 @@ var swiper2 = new Swiper(".mySwiper2", {
 
   breakpoints: {
     150: {
+      direction: "vertical",
+      spaceBeetwen: 30,
+
       slidesPerView: 1,
     },
 
