@@ -138,49 +138,61 @@ body {
 }
 
 #section {
-  background-attachment: fixed;
   height: 80rem;
   position: relative;
 }
 
-.hero-section {
-  max-width: 144rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#section #video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 90%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
-.hero-section .watermark {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero-section {
+  height: 100%;
+  width: 100%;
   position: absolute;
   bottom: 0;
   pointer-events: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-family: "Princess Sofia";
   overflow: hidden;
   font-weight: bold;
 }
 
-.hero-section .watermark .text-1 {
+.hero-section .text-1 {
   letter-spacing: 2rem;
   font-size: 14vw;
   -webkit-text-stroke: 0.3rem #d3d4d9;
 }
 
-.hero-section .watermark .text-2 {
+.hero-section .text-2 {
   font-size: 8vw;
   letter-spacing: 0;
   -webkit-text-stroke: 0.3rem #d3d4d9;
 }
 
-.hero-section .watermark h1 {
-  font-size: 10rem;
+.hero-section .titles {
+  margin-left: 4rem;
+  max-width: 40%;
+}
+
+.hero-section .titles h1 {
+  font-size: 8rem;
+  color: #fff;
+}
+
+.hero-section .titles h2 {
+  line-height: 6rem;
+  font-size: 4rem;
   color: #fff;
 }
 
@@ -283,13 +295,6 @@ body {
 }
 
 @media screen and (max-width: 35em) {
-  #section {
-    background-image: url("../../../img/2.jpeg");
-    background-size: cover;
-    height: calc(100vh - 5rem);
-    width: 100vw;
-    background-position: center;
-  }
   .hero-section {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -324,27 +329,6 @@ body {
     font-size: 5rem;
     color: #fff;
     margin: 0 2rem 1rem;
-  }
-}
-
-@media screen and (max-width: 35em) {
-  .projects-section {
-    position: relative;
-    width: 100%;
-    height: 60rem;
-  }
-  .projects-section .slider {
-    cursor: pointer;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
-    background-color: #d3d4d9;
-    gap: 3rem;
   }
 }
 

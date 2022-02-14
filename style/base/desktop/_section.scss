@@ -1,37 +1,53 @@
 #section {
-  background-attachment: fixed;
   height: 80rem;
   position: relative;
+
+  #video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 90%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    filter: brightness(70%);
+  }
 }
 
 .hero-section {
-  max-width: 144rem;
-  align-items: center;
-  .watermark {
-    width: 50%;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    pointer-events: none;
-    flex-direction: column;
-    font-family: "Princess Sofia";
-    overflow: hidden;
-    font-weight: bold;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+  font-family: "Princess Sofia";
+  overflow: hidden;
+  font-weight: bold;
 
-    .text-1 {
-      // transform: translateX(-130%);
-      letter-spacing: 2rem;
-      font-size: 14vw;
-      -webkit-text-stroke: 0.3rem $light-gray;
-    }
-    .text-2 {
-      font-size: 8vw;
-      letter-spacing: 0;
-      -webkit-text-stroke: 0.3rem $light-gray;
-    }
+  .text-1 {
+    letter-spacing: 2rem;
+    font-size: 14vw;
+    -webkit-text-stroke: 0.3rem $light-gray;
+  }
+  .text-2 {
+    font-size: 8vw;
+    letter-spacing: 0;
+    -webkit-text-stroke: 0.3rem $light-gray;
+  }
 
+  .titles {
+    margin-left: 4rem;
+    max-width: 40%;
     h1 {
-      font-size: 10rem;
+      font-size: 8rem;
+      color: #fff;
+    }
+
+    h2 {
+      line-height: 6rem;
+      font-size: 4rem;
       color: #fff;
     }
   }
