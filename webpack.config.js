@@ -1,25 +1,46 @@
-const miniCssExtractPlugin = require("mini-css-extract-plugin");
-
 const path = require("path");
-const mode =
-  process.env.NODE_ENV === "production" ? "production" : "develpment";
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const fileLoader = require("file-loader");
 module.exports = {
-  entry: {
-    main: "./src/main.js",
-  },
-  mode: mode,
-  output: {
-    filename: "[name]-bundle.js",
-    path: path.resolve(__dirname, "./dist"),
-    publicPath: "/",
+  entry: [
+    "./src/main.js",
+    "./src/gsap/gsap.min.js",
+    "./src/gsap/animation.js",
+    "./src/swiper/swiper.js",
+  ],
 
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "/index.html",
+      inject: "body",
+    }),
+  ],
+  module: {
     rules: [
       {
         test: /\.css$/i,
+
+        use: ["style-loader", "css-loader"],
       },
+
+      {
+        test: /\.(gif|png|jpe?g)$/,
+        type: "asset",
+      },
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loader: "eslint-loader",
+      // },
     ],
   },
-  devServer: {
-    contentBase: "dist",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
 };
