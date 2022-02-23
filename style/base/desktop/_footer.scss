@@ -9,16 +9,62 @@
   display: flex;
 
   .footer-left {
-    height: inherit;
     width: 50%;
+
+    .form {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.6rem;
+      width: 100%;
+      height: 98%;
+      input,
+      textarea,
+      button {
+        border: 0.1rem solid $footer-blue;
+        width: 42rem;
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+
+      button {
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
+        background-color: $footer-blue;
+        color: $light-gray;
+
+        &:hover {
+          background-color: $light-gray;
+          color: $footer-blue;
+          transition: 500ms ease;
+        }
+      }
+    }
   }
 
   .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
     height: inherit;
     width: 50%;
-    background-color: #00171f;
+    background-color: $footer-blue;
     img {
-      background-color: #fff;
+      background-color: $light-gray;
+      height: 8rem;
+      border-radius: 2rem;
+      padding: 1rem;
+
+      &:hover {
+        transform: scale(1.3);
+        transition: all 400ms ease-in-out;
+      }
     }
   }
 }

@@ -1,5 +1,3 @@
-import "../style/sass/main.css";
-
 const menu = document.querySelector(".hide");
 const btn = document.querySelector("#toggle-menu");
 const close = document.querySelector("#close-btn");
