@@ -1,7 +1,7 @@
 .swiper {
-  background-color: $light-gray;
-  height: 60rem;
-  // overflow: hidden;
+  height: 70rem;
+  width: 70%;
+
   h2 {
     color: #fff;
   }
@@ -9,26 +9,17 @@
     text-align: center;
     position: relative;
 
-    .video-bg {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      object-fit: contain;
-      z-index: 2;
-    }
-
     .swiper-slide {
       margin-top: 1rem;
       border-radius: 0 0 2rem 2rem;
-      background-image: linear-gradient(
-        to top,
-        #232629,
-        #232629,
-        #00163c,
-        #001854,
-        #161267
-      );
+      background-color: $light-gray;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
 
+        object-fit: cover;
+      }
       i {
         color: #ec9b05;
       }

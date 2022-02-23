@@ -142,21 +142,6 @@ body {
   position: relative;
 }
 
-#section #video {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 90%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
-}
-
 .hero-section {
   height: 100%;
   width: 100%;
@@ -186,14 +171,26 @@ body {
 }
 
 .hero-section .titles h1 {
-  font-size: 8rem;
+  font-size: 4.4vw;
   color: #fff;
 }
 
 .hero-section .titles h2 {
-  line-height: 6rem;
-  font-size: 4rem;
+  line-height: 7rem;
+  font-size: 2.6vw;
   color: #fff;
+}
+
+#photo {
+  right: 2rem;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#photo img {
+  height: 90vh;
+  max-width: 80rem;
 }
 
 .promo-section {
@@ -223,8 +220,8 @@ body {
 }
 
 .swiper {
-  background-color: #d3d4d9;
-  height: 60rem;
+  height: 70rem;
+  width: 70%;
 }
 
 .swiper h2 {
@@ -236,20 +233,18 @@ body {
   position: relative;
 }
 
-.swiper .swiper-wrapper .video-bg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
-  z-index: 2;
-}
-
 .swiper .swiper-wrapper .swiper-slide {
   margin-top: 1rem;
   border-radius: 0 0 2rem 2rem;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#232629), color-stop(#232629), color-stop(#00163c), color-stop(#001854), to(#161267));
-  background-image: linear-gradient(to top, #232629, #232629, #00163c, #001854, #161267);
+  background-color: #d3d4d9;
+  overflow: hidden;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper .swiper-wrapper .swiper-slide i {

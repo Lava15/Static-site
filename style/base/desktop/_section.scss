@@ -1,19 +1,6 @@
 #section {
   height: 80rem;
   position: relative;
-
-  #video {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 90%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    filter: brightness(70%);
-  }
 }
 
 .hero-section {
@@ -41,14 +28,26 @@
     margin-left: 4rem;
     max-width: 40%;
     h1 {
-      font-size: 8rem;
+      font-size: 4.4vw;
       color: #fff;
     }
 
     h2 {
-      line-height: 6rem;
-      font-size: 4rem;
+      line-height: 7rem;
+      font-size: 2.6vw;
       color: #fff;
     }
+  }
+}
+
+#photo {
+  right: 2rem;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  img {
+    height: 90vh;
+    max-width: 80rem;
+    // transform: translateY(-100rem);
   }
 }

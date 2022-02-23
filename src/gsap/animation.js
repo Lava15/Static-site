@@ -62,3 +62,17 @@ tl3
     stagger: 0.05,
     ease: "power4.out",
   });
+
+const tl4 = gsap
+  .timeline({
+    repeat: 0,
+    repeatDelay: 2,
+    ease: "expo.inOut",
+  })
+  .to("#photo", { yPercent: 200 }, { duration: 3, opacity: 0 })
+  .fromTo(
+    "#photo",
+    { yPercent: -200 },
+    { duration: 2, opacity: 1, yPercent: 0 },
+    "<"
+  );
