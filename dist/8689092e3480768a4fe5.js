@@ -1,0 +1,1 @@
+import"../style/sass/main.css";const menu=document.querySelector(".hide"),btn=document.querySelector("#toggle-menu"),close=document.querySelector("#close-btn");btn.addEventListener("click",(()=>{menu.classList.toggle("menu")})),close.addEventListener("click",(()=>{menu.classList.toggle("menu")}));
