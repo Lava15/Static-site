@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const fileLoader = require("file-loader");
 module.exports = {
   entry: [
-    "./src/main.js",
     "./src/gsap/gsap.min.js",
     "./src/gsap/animation.js",
     "./src/swiper/swiper.js",
+    "./src/main.js",
   ],
 
   plugins: [
