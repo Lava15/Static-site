@@ -45,8 +45,8 @@ gsap.set(".text-2 ", {
   scale: 0,
   opacity: 0,
 });
-const tl3 = gsap.timeline({ repeat: 1, ease: "expo.inOut" });
-tl3
+const tl3 = gsap
+  .timeline({ repeat: 1, ease: "expo.inOut" })
   .to(".text-2 ", {
     duration: 3,
     x: 0,

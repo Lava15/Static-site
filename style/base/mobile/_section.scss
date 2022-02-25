@@ -1,40 +1,47 @@
 @media screen and (max-width: 35em) {
   #section {
-    // // background-image: url("../../../img/2.jpeg");
-    // background-size: cover;
-    // height: calc(100vh - 5rem);
-    // // width: 100vw;
-    // // background-position: center;
-  }
+    height: 100vh;
+    position: relative;
 
-  .hero-section {
-    align-items: center;
-    .watermark {
-      width: 100%;
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      pointer-events: none;
-      flex-direction: column;
-      overflow: hidden;
-      font-weight: bold;
-
+    .hero-section {
       .text-1 {
+        margin-left: 4rem;
+        margin-top: 10rem;
         letter-spacing: 2rem;
-        font-size: 14vw;
-        -webkit-text-stroke: 0.3rem $light-gray;
+        font-size: 6rem;
+        -webkit-text-stroke: 0.1rem $light-gray;
       }
       .text-2 {
-        font-size: 8vw;
+        margin-left: 4rem;
+        font-size: 5rem;
         letter-spacing: 0;
-        -webkit-text-stroke: 0.3rem $light-gray;
+        -webkit-text-stroke: 0.1rem $light-gray;
       }
 
-      h1 {
-        font-size: 5rem;
-        color: #fff;
-        margin: 0 2rem 1rem;
+      .titles {
+        max-width: 100%;
+        left: 0;
+        margin-left: 2rem;
+        bottom: 20rem;
+        position: absolute;
+        h1 {
+          font-size: 3rem;
+        }
+
+        h2 {
+          line-height: 3rem;
+          font-size: 2rem;
+          overflow: visible;
+        }
       }
+    }
+
+    #photo {
+      height: 100%;
+      width: 100%;
+
+      right: 0;
+      bottom: 0;
     }
   }
 }
