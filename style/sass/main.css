@@ -539,28 +539,6 @@ body {
     height: 60rem;
     width: 94%;
   }
-  .swiper h2 {
-    color: #fff;
-  }
-  .swiper .swiper-wrapper {
-    text-align: center;
-    position: relative;
-  }
-  .swiper .swiper-wrapper .swiper-slide {
-    margin-top: 1rem;
-    border-radius: 0 0 2rem 2rem;
-    background-color: #d3d4d9;
-    overflow: hidden;
-  }
-  .swiper .swiper-wrapper .swiper-slide img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .swiper .swiper-wrapper .swiper-slide i {
-    color: #ec9b05;
-  }
 }
 
 @media screen and (max-width: 35em) {

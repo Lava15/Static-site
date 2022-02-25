@@ -2,29 +2,5 @@
   .swiper {
     height: 60rem;
     width: 94%;
-
-    h2 {
-      color: #fff;
-    }
-    .swiper-wrapper {
-      text-align: center;
-      position: relative;
-
-      .swiper-slide {
-        margin-top: 1rem;
-        border-radius: 0 0 2rem 2rem;
-        background-color: $light-gray;
-        overflow: hidden;
-        img {
-          height: 100%;
-          width: 100%;
-
-          object-fit: cover;
-        }
-        i {
-          color: #ec9b05;
-        }
-      }
-    }
   }
 }
