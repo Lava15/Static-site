@@ -104,8 +104,8 @@ body {
 }
 
 .logo {
-  height: 5rem;
-  width: 5rem;
+  height: 7rem;
+  width: 7rem;
 }
 
 .toggle-menu,
@@ -235,7 +235,6 @@ body {
 
 .swiper .swiper-wrapper .swiper-slide {
   margin-top: 1rem;
-  border-radius: 0 0 2rem 2rem;
   background-color: #d3d4d9;
   overflow: hidden;
 }
@@ -667,7 +666,7 @@ body {
 
 @media screen and (min-width: 35em) and (max-width: 60em) {
   .logo {
-    margin-top: 5rem;
+    margin-top: 8rem;
     z-index: 5;
   }
   .nav {
