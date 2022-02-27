@@ -26,6 +26,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   scrollbar-color: #5c04ff #413f3f !important;
   scrollbar-width: thin !important;
@@ -237,9 +241,23 @@ body {
   margin-top: 1rem;
   background-color: #d3d4d9;
   overflow: hidden;
+  color: #00171f;
+}
+
+.swiper .swiper-wrapper .swiper-slide:nth-child(3) {
+  background: no-repeat center center/cover url("../../../img/project2.png");
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+.swiper .swiper-wrapper .swiper-slide:nth-child(3) span {
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
 }
 
 .swiper .swiper-wrapper .swiper-slide img {
+  z-index: -2;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -248,6 +266,27 @@ body {
 
 .swiper .swiper-wrapper .swiper-slide i {
   color: #ec9b05;
+}
+
+.btn-source {
+  background-color: #00171f;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-demo {
+  background-color: #41ead4;
+  color: #00171f;
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 2rem;
 }
 
 .footer {

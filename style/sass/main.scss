@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 // OTHER
 @import "../base/custom-scroll";
 @import "../base/vars";

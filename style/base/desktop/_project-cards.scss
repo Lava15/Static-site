@@ -13,15 +13,53 @@
       margin-top: 1rem;
       background-color: $light-gray;
       overflow: hidden;
+      color: $footer-blue;
+
+      &:nth-child(3) {
+        background: no-repeat center center/cover
+          url("../../../img/project2.png");
+        filter: brightness(95%);
+
+        span {
+          position: absolute;
+          right: 4rem;
+          top: 2rem;
+        }
+      }
       img {
+        z-index: -2;
         height: 100%;
         width: 100%;
-
         object-fit: cover;
+
+        //
       }
       i {
         color: #ec9b05;
       }
     }
   }
+}
+
+// BTN
+
+.btn-source {
+  background-color: $footer-blue;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-demo {
+  background-color: $light-green;
+  color: $footer-blue;
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 2rem;
 }
