@@ -2,7 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MinicssExtractPlugin = require("mini-css-extract-plugin");
 const fileLoader = require("file-loader");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
   entry: [
     "./src/gsap/gsap.min.js",
@@ -36,6 +35,7 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g)$/,
         type: "asset",
+        use: [{ loader: "file-loader" }],
       },
       {
         test: /\.html$/,
