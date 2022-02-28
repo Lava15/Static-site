@@ -245,7 +245,7 @@ a {
 }
 
 .swiper .swiper-wrapper .swiper-slide:nth-child(3) {
-  background: no-repeat center center/cover url("../../../img/project2.png");
+  background: no-repeat center center/cover url("https://lh4.googleusercontent.com/fkqI8083cHGOl68pWNR-QkgkZhyYTJ9gaELoMyyzbgH2Ad5awViVCbCbX53M6_O9hFaTZgl4dp2JDRbd2kEjsxdkcrFz-JT7eHvqeUB14mFufPnzRKz_Kfi0VvVXYKiM59ayi2XW");
   -webkit-filter: brightness(95%);
           filter: brightness(95%);
 }
