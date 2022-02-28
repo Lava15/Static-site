@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MinicssExtractPlugin = require("mini-css-extract-plugin");
 const fileLoader = require("file-loader");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
   entry: [
     "./src/gsap/gsap.min.js",
@@ -14,6 +15,10 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+  },
+
+  optimization: {
+    minimizer: [new CssMinimizerPlugin(), "..."],
   },
 
   plugins: [
@@ -29,7 +34,7 @@ module.exports = {
       {
         test: /\.css$/i,
         include: "/style/sass/main.css",
-        use: [MinicssExtractPlugin.loader, "css-loader"],
+        use: [{ loader: MinicssExtractPlugin.loader }, "css-loader"],
       },
 
       {
@@ -40,6 +45,7 @@ module.exports = {
         test: /\.html$/,
         use: ["html-loader"],
       },
+
       // {
       //   test: /\.js$/,
       //   exclude: /node_modules/,
