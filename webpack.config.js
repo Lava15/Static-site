@@ -17,10 +17,6 @@ module.exports = {
     clean: true,
   },
 
-  optimization: {
-    minimizer: [new CssMinimizerPlugin(), "..."],
-  },
-
   plugins: [
     new HtmlWebpackPlugin({
       template: "/index.html",
@@ -34,7 +30,7 @@ module.exports = {
       {
         test: /\.css$/i,
         include: "/style/sass/main.css",
-        use: [{ loader: MinicssExtractPlugin.loader }, "css-loader"],
+        use: [MinicssExtractPlugin.loader, "css-loader"],
       },
 
       {
