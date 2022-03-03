@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "Princess Sofia", "Poppins", sans-serif, cursive;
+  font-family: "Poppins", Verdana, sans-serif;
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -152,7 +152,6 @@ a {
   position: absolute;
   bottom: 0;
   pointer-events: none;
-  font-family: "Princess Sofia";
   overflow: hidden;
   font-weight: bold;
 }
