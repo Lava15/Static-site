@@ -14,10 +14,10 @@ html {
   height: 100%;
   overflow-x: hidden;
   background-color: #161616;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", Verdana, sans-serif;
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -158,12 +158,12 @@ a {
 
 .hero-section .text-1 {
   letter-spacing: 2rem;
-  font-size: 14vw;
+  font-size: 12vw;
   -webkit-text-stroke: 0.3rem #d3d4d9;
 }
 
 .hero-section .text-2 {
-  font-size: 8vw;
+  font-size: 6vw;
   letter-spacing: 0;
   -webkit-text-stroke: 0.3rem #d3d4d9;
 }
@@ -174,13 +174,13 @@ a {
 }
 
 .hero-section .titles h1 {
-  font-size: 4.4vw;
+  font-size: 3vw;
   color: #fff;
 }
 
 .hero-section .titles h2 {
   line-height: 7rem;
-  font-size: 2.6vw;
+  font-size: 2vw;
   color: #fff;
 }
 
