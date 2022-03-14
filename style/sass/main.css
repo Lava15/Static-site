@@ -185,12 +185,14 @@ a {
 #photo {
   right: 2rem;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   overflow: hidden;
   opacity: 0;
 }
 
 #photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 90vh;
   max-width: 80rem;
 }
@@ -243,6 +245,9 @@ a {
 
 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper .swiper-wrapper .swiper-slide:nth-child(2) {

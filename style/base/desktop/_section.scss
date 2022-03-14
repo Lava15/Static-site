@@ -42,10 +42,11 @@
 #photo {
   right: 2rem;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   overflow: hidden;
   opacity: 0;
   img {
+    object-fit: cover;
     height: 90vh;
     max-width: 80rem;
     // transform: translateY(-100rem);
