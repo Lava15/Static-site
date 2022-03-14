@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Lava15/Static-site#readme",
   "dependencies": {
-    "gsap": "^3.9.1"
+    "gsap": "^3.9.1",
+    "swiper": "^8.0.7"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^10.2.4",

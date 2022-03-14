@@ -65,14 +65,11 @@ const tl3 = gsap
 
 const tl4 = gsap
   .timeline({
-    repeat: 0,
-    repeatDelay: 2,
-    ease: "expo.inOut",
+    // ease: "expo.inOut",
   })
-  .to("#photo", { yPercent: 200 }, { duration: 3, opacity: 0 })
-  .fromTo(
+  .from("#photo", { y: 0, duration: 1, ease: "power2.outIn" })
+  .from(
     "#photo",
-    { yPercent: -200 },
-    { duration: 2, opacity: 1, yPercent: 0 },
+    { scale: 1.3, x: 900, opacity: 0, duration: 2.5, ease: "power2.outIn" },
     "<"
   );
