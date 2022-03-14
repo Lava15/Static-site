@@ -67,7 +67,7 @@ const tl4 = gsap
   .timeline({
     // ease: "expo.inOut",
   })
-  .from("#photo", { y: 0, duration: 1, ease: "power2.outIn" })
+  .from("#photo", { y: 0, opacity: 1, duration: 1, ease: "power2.outIn" })
   .from(
     "#photo",
     { scale: 1.3, x: 900, opacity: 0, duration: 2.5, ease: "power2.outIn" },

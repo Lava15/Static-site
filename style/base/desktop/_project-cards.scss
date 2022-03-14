@@ -13,14 +13,15 @@
       background-color: $light-gray;
       overflow: hidden;
       color: $footer-blue;
+      //
+      img {
+        width: 100%;
+      }
 
       &:nth-child(2) {
-        background: no-repeat center center/cover url("../../../img/cat.jpeg");
         filter: brightness(95%);
       }
       &:nth-child(3) {
-        background: no-repeat center center/cover
-          url("../../../img/project1.png");
         filter: brightness(95%);
 
         span {
